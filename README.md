@@ -4,7 +4,7 @@ This project implements a logistic regression model to classify Spotify songs as
 
 ## Dataset
 
-- The dataset contains 18,642 songs: 9,386 Pop and 9,256 Classical.
+- The dataset contains 9,386 Pop songs and 9,256 Classical songs.
 - Features used: 'liveness' and 'loudness'
 
 ## Model
@@ -21,17 +21,17 @@ A logistic regression classifier was with the following characteristics:
    - Classical songs are spread across loudness but somwhat more concentrated in the low liveness range.
 
 2. Model Performance:
-   - Accuracy: ~90.90%
-   - Precision: 89.69%
+   - Accuracy: 90.90%
+   - Precision: 85.89%
    - Recall: 98.27%
-   - F1 Score: 93.76%
+   - F1 Score: 91.66%
 
 3. Decision Boundary:
    - The model relies more heavily on loudness than liveness for classification.
    - There's significant overlap between genres near the decision boundary, especially in the mid-range of liveness.
 
 4. Error Analysis:
-   - The model is more likely to misclassify Classical songs as Pop (208 cases) than vice versa (32 cases).
+   - The model is more likely to misclassify Classical songs as Pop (298 cases) than vice versa (32 cases of Pop songs as Classical).
    - This bias is likely due to the greater spread of Classical songs across the feature space.
 
 ## Conclusion
